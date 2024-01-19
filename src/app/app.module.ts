@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RoutModule } from './rout-routing.module';
+import { SonComponent } from './son/son.component';
+import { FormsModule } from '@angular/forms';
+import { DecativateComponent } from './decativate/decativate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    SonComponent,
+    DecativateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RoutModule
+    RoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
